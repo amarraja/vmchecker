@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
   def index
-    @entries = Statusentry.order(:id => :desc).paginate(:page => params[:page], :per_page => 5)
+    @entries = Statusentry.order("id desc").paginate(:page => params[:page], :per_page => 5)
   end
 
   def update
