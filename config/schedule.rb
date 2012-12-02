@@ -18,3 +18,7 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
+set :output, "#{path}/log/cron_log.log"
+every 5.minutes do
+  command "curl -X POST http://virginmedia.evanauth.com/update"
+end
