@@ -56,6 +56,8 @@ VirginMediaStatus::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 
+  match '/view_response' => "home#view_response", :via => :get
+  match '/raw_response' => "home#raw_response", :via => :get
   match '/update' => "home#update", :via => :post
   root :to => 'home#index'
 

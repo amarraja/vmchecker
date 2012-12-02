@@ -7,6 +7,7 @@
 		<tr>
 			<th>Time</th>
 			<th>Status</th>
+			<th></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14,6 +15,7 @@
 		<tr>
 			<td><%= entry.created_at %></td>
 			<td><%= entry.parsed_status %></td>
+			<td><a href="/view_response?id=<%= entry.id %>">View</a></td>
 		</tr>
 		<% end %>
 	</tbody>
