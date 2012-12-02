@@ -1,5 +1,5 @@
 upstream unicorn_<%= application %> {
-  server unix://#{shared_path}/sockets/puma.sock;
+  server unix://<%= shared_path %>/sockets/puma.sock;
 }
 
 server {
