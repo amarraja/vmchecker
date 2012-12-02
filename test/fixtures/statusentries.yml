@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  parsed_staus: MyString
+  raw_body: MyText
+
+two:
+  parsed_staus: MyString
+  raw_body: MyText

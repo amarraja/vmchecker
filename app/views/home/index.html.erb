@@ -1,0 +1,21 @@
+<h2>Statuses for NW6</h2>
+
+
+<%= will_paginate @entries, :renderer => BootstrapPagination::Rails %>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Time</th>
+			<th>Status</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @entries.each do |entry| %>
+		<tr>
+			<td><%= entry.created_at %></td>
+			<td><%= entry.parsed_status %></td>
+		</tr>
+		<% end %>
+	</tbody>
+<table>
+<%= will_paginate @entries, :renderer => BootstrapPagination::Rails %>
