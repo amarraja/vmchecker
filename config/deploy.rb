@@ -13,6 +13,7 @@ require 'whenever/capistrano'
 
 server "virginmedia.evanauth.com", :web, :app, :db, primary: true
 
+set :stage, "production"
 set :user, "deploy"
 set :application, "vmchecker"
 set :deploy_to, "/home/#{user}/apps/#{application}"
