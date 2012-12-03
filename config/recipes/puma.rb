@@ -46,6 +46,6 @@ namespace :puma do
     task command, roles: :app do
       run "service puma_#{application} #{command}"
     end
-    after "deploy:#{command}", "unicorn:#{command}"
+    after "deploy:#{command}", "puma:#{command}"
   end
 end
